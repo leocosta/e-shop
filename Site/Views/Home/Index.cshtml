@@ -20,37 +20,36 @@
 }
 
 <div id="menu">
-
     <h1>Categorias:</h1>
     <ol class="round">
 
         <li class="one">
             <h2>
-                @Html.ActionLink("Livros", "List", "Product")
+                @Html.ActionLink("Livros", "List", "Product", routeValues: new { id = 1 }, htmlAttributes: null)
             </h2>
         </li>
 
         <li class="two">
             <h2>
-                @Html.ActionLink("Acessórios de Informática", "List", "Product")
+                @Html.ActionLink("Acessórios de Informática", "List", "Product", routeValues: new { id = 2 }, htmlAttributes: null)
             </h2>
         </li>
 
         <li class="three">
             <h2>
-                @Html.ActionLink("Gadgets", "List", "Product")
+                @Html.ActionLink("Gadgets", "List", "Product", routeValues: new { id = 3 }, htmlAttributes: null)
             </h2>
         </li>
 
         <li class="four">
             <h2>
-                @Html.ActionLink("Tênis", "List", "Product")
+                @Html.ActionLink("Tênis", "List", "Product", routeValues: new { id = 4 }, htmlAttributes: null)
             </h2>
         </li>
 
         <li class="five">
             <h2>
-                @Html.ActionLink("Filmes", "List", "Product", new { id = 5 })
+                @Html.ActionLink("Filmes", "List", "Product", routeValues: new { id = 5 }, htmlAttributes: null)
             </h2>
         </li>
 

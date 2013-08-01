@@ -4,50 +4,30 @@
 
 <h2>Produtos</h2>
 
-<div align="center">
+<div id="productList" align="center" width="100%">
     <table>
-        <thead></thead>
-        <tbody>
+        <thead>
             <tr>
-                <td>
-                    <a href="#">
-                        <img src="~/Images/products/camisa1.jpg" />
-
-                        <p align="center">R$ 150,00</p>
-                    </a>
-                </td>
-                <td><a href="#">
-                    <img src="~/Images/products/camisa2.jpg" />
-                    <p align="center">R$ 170,00</p>
-                </a>
-                </td>
-                <td>
-                    <a href="#">
-                        <img src="~/Images/products/camisa3.jpg" />
-                        <p align="center">R$ 200,00</p>
-                    </a>
-                </td>
+                <th>Produto</th>
+                <th>Marca</th>
+                <th>Preço</th>
             </tr>
+        </thead>
+        <tbody data-bind="foreach: ProductList">
             <tr>
                 <td>
                     <a href="#">
-                        <img src="~/Images/products/tenis1.jpg" />
-                        <p align="center">R$ 120,00</p>
+                        <img data-bind="attr:{src: UrlImagem}" />
                     </a>
                 </td>
-                <td><a href="#">
-                    <img src="~/Images/products/tenis2.jpg" />
-                    <p align="center">R$ 250,00</p>
-                </a>
+                <td>
+                    <p data-bind="text:Marca" align="center"></p>
                 </td>
-                <td><a href="#">
-                    <img src="~/Images/products/tenis3.jpg" />
-                    <p align="center">R$ 170,00</p>
-                </a>
+                <td>
+                    <p data-bind="text:Preco" align="center"></p>
                 </td>
             </tr>
         </tbody>
-
         <tfoot id="pages">
             <tr>
                 <td colspan="3">
@@ -62,3 +42,6 @@
         </tfoot>
     </table>
 </div>
+
+<script src="~/Scripts/knockout-2.1.0.js"> </script>
+<script src="~/js/ProductViewModel.js"></script>

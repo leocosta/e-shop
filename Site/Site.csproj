@@ -236,6 +236,7 @@
     <Content Include="Images\products\tenis1.jpg" />
     <Content Include="Images\products\tenis2.jpg" />
     <Content Include="Images\products\tenis3.jpg" />
+    <Content Include="js\ProductViewModel.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -295,7 +296,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -27,6 +27,7 @@ namespace Core.Produtos
         private String _nome;
         private Double _preco;
         private Double _peso;
+        private String _marca;
 
         #endregion
 
@@ -48,6 +49,12 @@ namespace Core.Produtos
         public Double Peso { get; set; }
 
         public Categoria Categoria { get; set; }
+
+        public String Marca
+        {
+            get { return _marca; }
+            set { _marca = value; }
+        }
 
         #endregion
     }
